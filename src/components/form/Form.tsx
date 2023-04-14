@@ -1,6 +1,6 @@
 import React from "react";
-import CreatorFields from "./CreatorFields";
-import {ICreateFieldSettings} from "../interfaces/form.interfaces";
+import {Fields as CreatorFields} from "../";
+import {ICreateFieldSettings} from "../../interfaces/form.interfaces";
 
 interface IForm {
   settings: Array<ICreateFieldSettings>;

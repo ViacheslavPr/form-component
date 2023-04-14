@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from '@testing-library/react';
 import Form from "./Form";
-import {ETypeSettings} from "../interfaces/form.interfaces";
+import {ETypeSettings} from "../../interfaces/form.interfaces";
 
 test('form', () => {
   render(

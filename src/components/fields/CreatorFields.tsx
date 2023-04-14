@@ -1,5 +1,5 @@
 import React from "react";
-import {ICreateFieldSettings} from "../interfaces/form.interfaces";
+import {ICreateFieldSettings} from "../../interfaces/form.interfaces";
 import CreateField from "./CreateField";
 
 interface ICreatorFields {

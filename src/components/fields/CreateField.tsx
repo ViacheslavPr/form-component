@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import {ETypes, ICreateFieldSettings} from "../interfaces/form.interfaces";
+import {ETypes, ICreateFieldSettings} from "../../interfaces/form.interfaces";
 
 interface ICreateField {
   value: ICreateFieldSettings;

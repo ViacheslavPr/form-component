@@ -1,21 +1,12 @@
-import React, { useMemo, useState } from "react";
-import Form from "../../components/Form";
+import React from "react";
+import {Form} from "../../components";
 import { data } from "./constants/main.constants";
+import useCreateForm from "../../hooks/useCreateForm";
 
 const MainPage:React.FC = () => {
-  const [formData, setFormData] = useState<{[p: string]: string}>({});
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
+  const { isDisabled, handleSubmit, formData, setFormData} = useCreateForm(() => {
     console.log('Result submit: ', formData)
-  }
-
-  const isDisabled = useMemo(() => {
-    return data.reduce((acc, val) => {
-      if (val.required && !formData[val.id]) return true;
-      return acc;
-    }, false)
-  }, [formData]);
+  })
 
   return <Form
     formData={formData}
