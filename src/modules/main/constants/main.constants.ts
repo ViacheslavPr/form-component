@@ -1,27 +1,27 @@
-import {ETypeSettings, ICreateFieldSettings } from "../../../interfaces/form.interfaces";
+import { ETypeSettings, ICreateFieldSettings } from '../../../interfaces/form.interfaces';
 
 export const data: Array<ICreateFieldSettings> = [
   {
-    id: "first_name",
+    id: 'first_name',
     type: ETypeSettings.inputText,
-    label: "First Name",
-    defaultValue: "Some first name"
+    label: 'First Name',
+    defaultValue: 'Some first name',
   },
   {
-    id: "last_name",
+    id: 'last_name',
     type: ETypeSettings.inputText,
-    label: "Last Name"
+    label: 'Last Name',
   },
   {
-    id: "email",
+    id: 'email',
     type: ETypeSettings.inputEmail,
-    label: "Email",
-    required: true
+    label: 'Email',
+    required: true,
   },
   {
-    id: "password",
+    id: 'password',
     type: ETypeSettings.inputPassword,
-    label: "Password",
-    required: true
-  }
+    label: 'Password',
+    required: true,
+  },
 ];

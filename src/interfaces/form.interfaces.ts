@@ -1,7 +1,7 @@
 export enum ETypeSettings {
-  inputText = "inputText",
-  inputEmail = "inputEmail",
-  inputPassword = "inputPassword",
+  inputText = 'inputText',
+  inputEmail = 'inputEmail',
+  inputPassword = 'inputPassword',
 }
 
 export interface ICreateFieldSettings {
@@ -13,7 +13,7 @@ export interface ICreateFieldSettings {
 }
 
 export enum ETypes {
-  inputText = "text",
-  inputEmail = "email",
-  inputPassword = "password",
+  inputText = 'text',
+  inputEmail = 'email',
+  inputPassword = 'password',
 }
